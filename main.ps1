@@ -47,11 +47,12 @@ public class Audio {
 '@
 
 [Audio]::Mute = $false
-[Audio]::Volume = 0.75
+[Audio]::Volume = 1.00
 
 $speak = New-Object System.Speech.Synthesis.SpeechSynthesizer
 
-$phrase = @("Always lock your computer",
-            "Password is not a good password") | Get-Random
+$phrase = @("Don't forget to lock your computer",
+            "Remember password is not a good password") | Get-Random
 
+$speak.Speak($env:UserName)
 $speak.Speak($phrase)

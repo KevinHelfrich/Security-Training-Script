@@ -6,3 +6,10 @@ Help these people by installing this script on their system, perhaps when they l
 
 ## Usage
 Run install.bat in the same folder as main.ps1, it will set up the lesson in security for the poor confused soul in question.
+
+Run uninstall.bat when they have learned their lesson.
+
+## What it does
+A hidden folder is created on the victim's computer and a Powershell script (main.ps1) is copied there.
+
+The script is run once a minute. It un-mutes the victims volume and sets it to one hundred per cent, it then says a useful security tip.
