@@ -60,6 +60,9 @@ $phrase = @("Don't forget to lock your computer",
             "Longer passwords are better passwords",
             "You should use a password manager, can I recommend KeePass?",
             "Not having backups is a dangerous way to live",
+            "Having the same password everywhere is like having one key that unlocks everything you own",
+            "Storing passwords on a sticky note next to your desk is not best practice",
+            "Use a different password on every site you use",
             "Remember password is not a good password") | Get-Random
 
 $speak.Speak($env:UserName)
