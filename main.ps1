@@ -52,6 +52,14 @@ public class Audio {
 $speak = New-Object System.Speech.Synthesis.SpeechSynthesizer
 
 $phrase = @("Don't forget to lock your computer",
+            "Don't let someone else use your computer without you around",
+            "Make sure the website's URL is correct",
+            "Make sure that the SSL certificate for the page you are visiting is valid",
+            "Never give your password to anyone else",
+            "Update your software to avoid security holes",
+            "Longer passwords are better passwords",
+            "You should use a password manager, can I recommend KeePass?",
+            "Not having backups is a dangerous way to live",
             "Remember password is not a good password") | Get-Random
 
 $speak.Speak($env:UserName)
