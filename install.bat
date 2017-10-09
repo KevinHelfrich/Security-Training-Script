@@ -1,4 +1,4 @@
-mkdir C:\securityTrainingScript
+mkdir -p C:\securityTrainingScript
 attrib +h C:\securityTrainingScript /s /d
 COPY .\main.ps1 C:\securityTrainingScript\main.ps1
 COPY .\delayedRun.ps1 C:\securityTrainingScript\delayedRun.ps1
